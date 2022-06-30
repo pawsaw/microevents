@@ -7,6 +7,7 @@ import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { FooModule } from './foo/foo.module';
+import { PeerModule } from './peer/peer.module';
 
 @Module({
   imports: [
@@ -33,6 +34,7 @@ import { FooModule } from './foo/foo.module';
       namingStrategy: new SnakeNamingStrategy(),
     }),
     FooModule,
+    PeerModule,
   ],
   controllers: [AppController],
   providers: [AppService],

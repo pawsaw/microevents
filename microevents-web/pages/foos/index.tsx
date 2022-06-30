@@ -16,7 +16,9 @@ const AllFoosPage: NextPage<AllFoosPageProps> = () => {
     loading,
     error,
   } = useQuery<AllActiveFoos, AllActiveFoosVariables>(ALL_ACTIVE_FOOS, {
-    variables: {},
+    variables: {
+      take: 10,
+    },
   });
 
   const router = useRouter();
@@ -25,7 +27,7 @@ const AllFoosPage: NextPage<AllFoosPageProps> = () => {
     <div>
       <h1>All active Foos</h1>
       {loading ? (
-        <span>Loading</span>
+        <span>Loading...</span>
       ) : (
         <div>
           {allActiveFoos?.foos.map((foo) => (
