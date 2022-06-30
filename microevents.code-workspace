@@ -1,0 +1,16 @@
+{
+    "folders": [
+        {
+            "name": "web",
+            "path": "./microevents-web",
+        },
+        {
+            "name": "api",
+            "path": "./microevents-api",
+        },
+        {
+            "name": "docker",
+            "path": "./microevents-docker",
+        },
+    ]
+}

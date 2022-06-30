@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: microevents
+      POSTGRES_PASSWORD: Micro246_
+      POSTGRES_DB: microevents
+    ports:
+      - "5432:5432"
